@@ -1,0 +1,35 @@
+{
+  "name": "libgrabber",
+  "version": "0.0.0",
+  "description": "Automatically updates hosted projects on jsDelivr CDN.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "bin": {
+    "libgrabber": "./bin/libgrabber.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jsdelivr/libgrabber.git"
+  },
+  "keywords": [
+    "libgrabber",
+    "jsdelivr",
+    "cdn"
+  ],
+  "author": "Aleksandar Antok",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsdelivr/libgrabber/issues"
+  },
+  "homepage": "https://github.com/jsdelivr/libgrabber",
+  "dependencies": {
+    "vinyl-fs": "0.0.2",
+    "event-stream": "~3.1.0"
+  },
+  "devDependencies": {
+    "chai": "~1.9.0",
+    "mocha": "~1.17.1"
+  }
+}
