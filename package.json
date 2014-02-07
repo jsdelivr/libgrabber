@@ -2,7 +2,7 @@
   "name": "libgrabber",
   "version": "0.0.0",
   "description": "Automatically updates hosted projects on jsDelivr CDN.",
-  "main": "index.js",
+  "main": "./lib/libgrabber.js",
   "scripts": {
     "test": "mocha"
   },
@@ -26,7 +26,16 @@
   "homepage": "https://github.com/jsdelivr/libgrabber",
   "dependencies": {
     "vinyl-fs": "0.0.2",
-    "event-stream": "~3.1.0"
+    "event-stream": "~3.1.0",
+    "async": "~0.2.10",
+    "concat-stream": "~1.4.1",
+    "semver": "~2.2.1",
+    "jsonfile": "~1.1.1",
+    "lodash": "~2.4.1",
+    "npm-registry-client": "~0.3.5",
+    "silent-npm-registry-client": "0.0.0",
+    "download": "~0.1.10",
+    "mkdirp": "~0.3.5"
   },
   "devDependencies": {
     "chai": "~1.9.0",
