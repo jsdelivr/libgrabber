@@ -2,6 +2,7 @@
 
 var grabber = require('../lib/libgrabber');
 
-var projectsPath = process.argv[2] || process.cwd();
+var jsDelivrPath = process.argv[2];
+var projectsPath = process.argv[3];
 
-grabber.traverse(projectsPath);
+grabber.updateAll(jsDelivrPath, projectsPath);
