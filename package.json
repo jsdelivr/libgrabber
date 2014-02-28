@@ -40,7 +40,8 @@
     "github": "~0.1.13",
     "decompress": "~0.1.6",
     "gift": "^0.2.0",
-    "nconf": "^0.6.9"
+    "nconf": "^0.6.9",
+    "winston": "^0.7.2"
   },
   "devDependencies": {
     "chai": "~1.9.0",
