@@ -1,8 +1,12 @@
 #!/usr/bin/env node
 
+var path = require('path');
+
+var config = require('../lib/config');
 var grabber = require('../lib/libgrabber');
 
-var jsDelivrPath = process.argv[2];
-var projectsPath = process.argv[3];
+var jsDelivrPath = config.get('jsDelivrPath');
+var projectsDir = config.get('jsDelivrProjectsDir');
+var projectsPath = path.join(jsDelivrPath, projectsDir);
 
 grabber.updateAll(jsDelivrPath, projectsPath);

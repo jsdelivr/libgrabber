@@ -38,7 +38,9 @@
     "mkdirp": "~0.3.5",
     "glob": "~3.2.8",
     "github": "~0.1.13",
-    "decompress": "~0.1.6"
+    "decompress": "~0.1.6",
+    "gift": "^0.2.0",
+    "nconf": "^0.6.9"
   },
   "devDependencies": {
     "chai": "~1.9.0",
