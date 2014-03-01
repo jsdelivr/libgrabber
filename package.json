@@ -41,7 +41,8 @@
     "decompress": "~0.1.6",
     "gift": "^0.2.0",
     "nconf": "^0.6.9",
-    "winston": "^0.7.2"
+    "winston": "^0.7.2",
+    "bower": "^1.2.8"
   },
   "devDependencies": {
     "chai": "~1.9.0",
