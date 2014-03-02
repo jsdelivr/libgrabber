@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/jsdelivr/libgrabber",
   "dependencies": {
-    "vinyl-fs": "0.0.2",
+    "vinyl-fs": "^0.1.0",
     "event-stream": "~3.1.0",
     "async": "~0.2.10",
     "concat-stream": "~1.4.1",
@@ -42,7 +42,8 @@
     "nconf": "^0.6.9",
     "winston": "^0.7.2",
     "bower": "^1.2.8",
-    "remove": "^0.1.5"
+    "remove": "^0.1.5",
+    "npmconf": "^0.1.13"
   },
   "devDependencies": {
     "chai": "~1.9.0",
