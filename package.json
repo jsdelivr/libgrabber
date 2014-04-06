@@ -45,7 +45,8 @@
     "remove": "^0.1.5",
     "npmconf": "^0.1.13",
     "handlebars": "^2.0.0-alpha.2",
-    "js-beautify": "^1.4.2"
+    "js-beautify": "^1.4.2",
+    "bower-registry-client": "^0.2.0"
   },
   "devDependencies": {
     "chai": "~1.9.0",
