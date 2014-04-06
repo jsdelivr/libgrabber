@@ -27,7 +27,7 @@
   "dependencies": {
     "vinyl-fs": "^0.1.0",
     "event-stream": "~3.1.0",
-    "async": "~0.2.10",
+    "async": "~0.6.2",
     "concat-stream": "~1.4.1",
     "semver": "~2.2.1",
     "jsonfile": "~1.1.1",
@@ -37,16 +37,18 @@
     "mkdirp": "~0.3.5",
     "glob": "~3.2.8",
     "github": "~0.1.13",
-    "decompress": "~0.1.6",
-    "gift": "^0.2.0",
+    "decompress": "0.1.6",
+    "gift": "~0.4.0",
     "nconf": "^0.6.9",
     "winston": "^0.7.2",
     "bower": "^1.2.8",
     "remove": "^0.1.5",
-    "npmconf": "^0.1.13"
+    "npmconf": "^0.1.13",
+    "handlebars": "^2.0.0-alpha.2",
+    "js-beautify": "^1.4.2"
   },
   "devDependencies": {
     "chai": "~1.9.0",
-    "mocha": "~1.17.1"
+    "mocha": "~1.18.2"
   }
 }
