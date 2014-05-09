@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 var path = require('path');
 
 var config = require('../lib/config');
