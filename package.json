@@ -1,6 +1,6 @@
 {
   "name": "libgrabber",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Automatically updates hosted projects on jsDelivr CDN.",
   "main": "lib/libgrabber.js",
   "scripts": {
