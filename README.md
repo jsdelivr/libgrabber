@@ -42,12 +42,12 @@ $ git remote add upstream git@github.com:jsdelivr/jsdelivr.git
 
 ```json
 {
-"github-access-token": "<secret>",
-"pull-request-repo": "https://github.com/jsdelivr/jsdelivr",
-"origin-repo": "<forked-repo-https-endpoint>",
-"mention-repo-owner": false,
-"papertrail-url": "<optional>",
-"papertrail-hostname": "<optional>"
+  "github-access-token": "<secret>",
+  "pull-request-repo": "https://github.com/jsdelivr/jsdelivr",
+  "origin-repo": "<forked-repo-https-endpoint>",
+  "mention-repo-owner": false,
+  "papertrail-url": "<optional>",
+  "papertrail-hostname": "<optional>"
 }
 ```
 
