@@ -89,7 +89,7 @@ When libgrabber traverses through each project hosted on jsDelivr repo, it looks
 - ```main.js``` - copies ```main.js``` file in the base dir
 - ```*.js``` - copies javascript files found in the base dir
 - ```**/*.js``` - copies javascript files found in the base directory and recursively in all its subdirectories. Directory structure will be retained.
-- ```dist/*.js``` - copies javascript files from dist dir. Directory structure will not be retained (e.g. ```dist``` dir will be stripped when copied). To retain directory structure prepend glob with ```./```
+- ```dist/*.js``` - copies javascript files from dist dir. Directory structure will not be retained (e.g. ```dist``` dir will be stripped when copied). To retain directory structure prepend glob with ```./``` e.g. ```./dist/*.js``` 
 
 ```files/exclude``` (optional) - specifies files and dirs that will be excluded. See above examples.
 
