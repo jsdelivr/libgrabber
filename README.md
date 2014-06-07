@@ -59,6 +59,71 @@ $ git remote add upstream git@github.com:jsdelivr/jsdelivr.git
 $ libgrabber --jsdelivr-path jsdelivr/ --config jsdelivr/libgrabber.config.json
 ```
 
+### Update.json schema
+
+When libgrabber traverses through each project hosted on jsDelivr repo, it looks for ```update.json``` at the root of each project. ```update.json``` specifies where libgrabber should check for project updates and which files it should copy to jsDelivr. Besides getting project updates from github, libgrabber supports popular package managers [npm](http://npmjs.org/) and [bower](http://bower.io/). 
+
+```json
+{
+  "packageManager": "<github|npm|bower>",
+  "name": "<package-name>",
+  "repo": "<user>/<repo>",
+  "files": {
+    "basePath": "<dir>",
+    "include": ["<glob-string-1>", "<glob-string-2>"],
+    "exclude": ["<glob-string-3>"]
+  }
+}
+```
+
+```packageManager``` (required) - type of package manager (github, npm or bower)
+
+```name``` (required) - refers to package name on npm or bower, or repo name when github is used
+
+```repo``` (optional when npm or bower is used) - github repository (for example ```jsdelivr/libgrabber```)
+
+```files/basePath``` (optional) - base directory from which files are copied (for example ```dist```). Defaults to ```/``` (relative to the root directory of unpacked project package).
+
+```files/include``` (optional) - specifies files and dirs that will be copied from project package. Accepts one or more glob strings. Defaults to ```**/*```, meaning all files and directories. Useful examples:
+
+- ```main.js``` - copies ```main.js``` file in the base dir
+- ```*.js``` - copies javascript files found in the base dir
+- ```**/*.js``` - copies javascript files found in the base directory and recursively in all its subdirectories. Directory structure will be retained.
+- ```dist/*.js``` - copies javascript files from dist dir. Directory structure will not be retained (e.g. ```dist``` dir will be stripped when copied). To retain directory structure prepend glob with ```./```
+
+```files/exclude``` (optional) - specifies files and dirs that will be excluded. See above examples.
+
+Libgrabber glob functionality is based on [node-glob](https://github.com/isaacs/node-glob), for more information and examples, please see its [documentation](https://github.com/isaacs/node-glob).
+
+#### GitHub Example ([bootstrap](https://github.com/twbs/bootstrap))
+
+Following example excludes non-minified resources:
+
+```json
+{
+  "packageManager": "github",
+  "name": "bootstrap",
+  "repo": "twbs/bootstrap",
+  "files": {
+    "basePath": "dist/",
+    "exclude": ["css/bootstrap.css", "css/bootstrap.css.map", "css/bootstrap-theme.css", "css/bootstrap-theme.css.map", "js/bootstrap.js"]
+  }
+}
+```
+
+#### npm Example ([lodash](https://github.com/lodash/lodash))
+
+```json
+{
+  "packageManager": "npm",
+  "name": "lodash",
+  "repo": "lodash/lodash",
+  "files": {
+    "basePath": "dist/",
+  }
+}
+```
+
 ### Updating Package
 
 When your [SemVer](http://semver.org/) is updated on the master branch, libgrabber will automatically update your package on jsDelivr.
