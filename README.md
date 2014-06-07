@@ -95,7 +95,7 @@ When libgrabber traverses through each project hosted on jsDelivr repo, it looks
 
 Libgrabber glob functionality is based on [node-glob](https://github.com/isaacs/node-glob), for more information and examples, please see its [documentation](https://github.com/isaacs/node-glob).
 
-#### GitHub Example ([bootstrap](https://github.com/twbs/bootstrap))
+#### [Bootstrap](https://github.com/twbs/bootstrap) Example (github)
 
 Following example excludes non-minified resources:
 
@@ -111,7 +111,20 @@ Following example excludes non-minified resources:
 }
 ```
 
-#### npm Example ([lodash](https://github.com/lodash/lodash))
+#### [Humane-js](https://github.com/wavded/humane-js) Example (github)
+
+```json
+{
+  "packageManager": "github",
+  "name": "humane.js",
+  "repo": "wavded/humane-js",
+  "files": {
+    "include": ["humane.min.js", "humane.js", "./themes/**/*"]
+  }
+}
+```
+
+#### [Lodash](https://github.com/lodash/lodash) Example (npm)
 
 ```json
 {
