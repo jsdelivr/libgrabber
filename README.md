@@ -1,7 +1,11 @@
 libgrabber
 ==========
 
-*Work in Progress*
+libgrabber is a bot that runs on jsDelivr's servers and is responsible to auto-update projects that we host.
+To update a project the bot looks for an `update.json` file in each project's directory. 
+Below you will find instructions on how to create that file.
+
+If you are a developer and want to contribute to our bot's code we also include instructions on how to install it and run it locally.
 
 Usage
 -----
