@@ -1,7 +1,7 @@
 libgrabber
 ==========
 
-libgrabber is a bot that runs on jsDelivr's servers that is responsible to auto-update projects that we host.
+libgrabber is a bot that runs on jsDelivr's servers.  It is responsible to auto-update projects that we host.
 There are three simple steps to turn on auto-updating:
 
 1. [Prepare minifed files](#prepare-minifed-files)
