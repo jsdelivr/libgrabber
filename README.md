@@ -34,7 +34,7 @@ When libgrabber traverses through each project hosted on jsDelivr repo, it looks
 }
 ```
 
-`packageManager` (required) (github, npm or bower) - where you want libgrabber to upload the files from for jsDelivr
+`packageManager` (required) (github, npm or bower) - where you want libgrabber to download the files from for jsDelivr
 
 `name` (required) - refers to package name on npm or Bower, or repo name when GitHub is used
 
