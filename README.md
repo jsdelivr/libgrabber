@@ -117,7 +117,7 @@ Bower has its own system to [register packages](http://bower.io/docs/creating-pa
 Running your own libgrabber bot
 -------------------------------
 
-It is not required for you to run the bot yourself to update your own project.  These instructions are for you to test locally.
+It is not required for you to run the bot yourself to update your own project.  These instructions are for you to run libgrabber locally for testing.
 
 #### Configuration
 
