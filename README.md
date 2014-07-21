@@ -4,9 +4,9 @@ libgrabber
 libgrabber is a bot that runs on jsDelivr's servers that is responsible to auto-update projects that we host.
 To update a project the bot looks for an `update.json` file in each project's directory.  There are three simple steps to turn on auto-updating:
 
-1. [Prepare minifed files](#Prepare minifed files)
-2. [Add or update `update.json` schema at jsDelivr](#Add update.json schema at jsDelivr)
-3. [Create New Package Release](#Create New Package Release)
+1. [Prepare minifed files](#prepare-minifed-files)
+2. [Add or update `update.json` schema at jsDelivr](#add-updatejson-schema-at-jsdelivrjsdelivr)
+3. [Create New Package Release](#create-new-package-release)
 
 If you are a developer and want to contribute to our bot's code, we also include [instructions](Running your own libgrabber bot) on how to install it and run it locally.
 
@@ -111,7 +111,7 @@ Use [`npm publish`](https://www.npmjs.org/doc/cli/npm-publish.html).
 
 #### Bower
 
-Bower has its own system to [register packages](http://bower.io/docs/creating-packages/), though the package file needs a git host.  If GitHub is used, follow the [instructions above](#GitHub Releases) to let Bower know your package is updated.
+Bower has its own system to [register packages](http://bower.io/docs/creating-packages/), though the package file needs a git host.  If GitHub is used, follow the [instructions above](#github-releases) to let Bower know your package is updated.
 
 
 Running your own libgrabber bot
