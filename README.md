@@ -40,7 +40,7 @@ When libgrabber traverses through each project hosted on jsDelivr repo, it looks
 
 `repo` (optional when npm or bower is used) - GitHub repository (for example `jsdelivr/libgrabber`)
 
-`files/basePath` (optional) - base directory from which files are copied (for example `dist`). Defaults to `/` (relative to the root directory of unpacked project package).
+`files/basePath` (optional) - base directory from which files are copied (for example `dist/`). Defaults to `/` (relative to the root directory of unpacked project package).
 
 `files/include` (optional) - specifies files and dirs that will be copied from project package. Accepts one or more glob strings. Defaults to `**/*`, meaning all files and directories. Useful examples:
 
