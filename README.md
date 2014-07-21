@@ -2,7 +2,7 @@ libgrabber
 ==========
 
 libgrabber is a bot that runs on jsDelivr's servers that is responsible to auto-update projects that we host.
-To update a project the bot looks for an `update.json` file in each project's directory.  There are three simple steps to turn on auto-updating:
+There are three simple steps to turn on auto-updating:
 
 1. [Prepare minifed files](#prepare-minifed-files)
 2. [Add or update `update.json` schema at jsDelivr](#add-updatejson-schema-at-jsdelivrjsdelivr)
