@@ -1,7 +1,7 @@
 libgrabber
 ==========
 
-libgrabber is a bot that runs on jsDelivr's servers.  It is responsible to auto-update projects that we host.
+libgrabber is a bot that runs on jsDelivr's servers to auto-update projects.
 There are three simple steps to enable auto-updating:
 
 1. [Prepare minifed files](#prepare-minifed-files)
@@ -17,9 +17,13 @@ Usage
 Not only will your users, but it helps us with hosting and promoting good practices 
 Please upload only minified files on jsDelivr.  Smaller files helps users load websites faster.  Minified files also helps us with hosting and promotes good practices.  If you need to upload images, see if [extra compression](http://www.sitepoint.com/image-compression-tools/) can make your images smaller.  [SVG optimizers](https://github.com/svg/svgo#svgo----) may also help with SVG files from Inkscape and Illustrator.
 
-### Add `update.json` schema at [jsDelivr/jsDelivr](https://github.com/jsdelivr/jsdelivr) <a href="#updatejson-schema"></a>
+### Add `update.json` <a href="#updatejson-schema"></a>
 
-When libgrabber traverses through each project hosted on jsDelivr repo, it looks for `update.json` at the root of each project. `update.json` specifies where libgrabber should check for project updates and which files it should copy to jsDelivr. Besides getting project updates from GitHub, libgrabber supports popular package managers [npm](http://npmjs.org/) and [bower](http://bower.io/).
+libgrabber looks for `update.json` at the root of each project folder.  This file tells libgrabber where to check for project updates and which files it should copy to jsDelivr.  You add `update.json` using these steps:
+
+1. Fork the [jsDelivr/jsDelivr](https://github.com/jsdelivr/jsdelivr) repo
+2. Open your project folder.  If it doesn't exist, please add a new folder and `info.ini` file using [jsDelivr's file structure](https://github.com/jsdelivr/jsdelivr#file-structure).
+3. Write `update.json` using this format:
 
 ```json
 {
@@ -34,7 +38,7 @@ When libgrabber traverses through each project hosted on jsDelivr repo, it looks
 }
 ```
 
-`packageManager` (required) (github, npm or bower) - to declare which package manager libgrabber watches for new versions
+`packageManager` (required) (github, [npm](http://npmjs.org/) or [bower](http://bower.io/)) - to declare which package manager libgrabber watches for new versions
 
 `name` (required) - refers to package name on npm or Bower, or repo name when GitHub is used
 
