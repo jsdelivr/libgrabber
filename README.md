@@ -2,20 +2,20 @@ libgrabber
 ==========
 
 libgrabber is a bot that runs on jsDelivr's servers.  It is responsible to auto-update projects that we host.
-There are three simple steps to turn on auto-updating:
+There are three simple steps to enable auto-updating:
 
 1. [Prepare minifed files](#prepare-minifed-files)
 2. [Add or update `update.json` schema at jsDelivr](#add-updatejson-schema-at-jsdelivrjsdelivr)
 3. [Create New Package Release](#create-new-package-release)
 
-If you are a developer and want to contribute to our bot's code, we also include [instructions](Running your own libgrabber bot) on how to install it and run it locally.
+If you are a developer and want to contribute to our bot's code, we also include [instructions](Running your own libgrabber bot) for running the bot locally.
 
 Usage
 -----
 
 ### Prepare minifed files
-
-Please upload only minified files on jsDelivr.  Not only your users will download the files faster, but helps us with hosting.  If you need to upload images, see if [extra compression](http://www.sitepoint.com/image-compression-tools/) can make your images smaller.  [SVG optimizers](https://github.com/svg/svgo#svgo----) may also help with SVG files from Inkscape and Illustrator.
+Not only will your users, but it helps us with hosting and promoting good practices 
+Please upload only minified files on jsDelivr.  Smaller files helps users load websites faster.  Minified files also helps us with hosting and promotes good practices.  If you need to upload images, see if [extra compression](http://www.sitepoint.com/image-compression-tools/) can make your images smaller.  [SVG optimizers](https://github.com/svg/svgo#svgo----) may also help with SVG files from Inkscape and Illustrator.
 
 ### Add `update.json` schema at [jsDelivr/jsDelivr](https://github.com/jsdelivr/jsdelivr) <a href="#updatejson-schema"></a>
 
@@ -34,7 +34,7 @@ When libgrabber traverses through each project hosted on jsDelivr repo, it looks
 }
 ```
 
-`packageManager` (required) (github, npm or bower) - where you want libgrabber to download the files from for jsDelivr
+`packageManager` (required) (github, npm or bower) - to declare which package manager libgrabber watches for new versions
 
 `name` (required) - refers to package name on npm or Bower, or repo name when GitHub is used
 
@@ -99,7 +99,7 @@ Following example excludes non-minified resources:
 
 ### Create new package release
 
-When libgrabber detects a release with a new [SemVer](http://semver.org/), it will automatically update your package on jsDelivr.  `packageManager` you chose in `update.json` determines where you need to update your actual package.
+When libgrabber detects a release with a new [SemVer](http://semver.org/) complaint tag, it will automatically update the repo on jsDelivr.  The `packageManager` value you chose in `update.json` determines where you need to update your actual package.
 
 #### GitHub Releases
 
