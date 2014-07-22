@@ -16,8 +16,8 @@ Usage
 ### Prepare minifed files
 Not only will your users, but it helps us with hosting and promoting good practices 
 Please upload only minified files on jsDelivr.  Smaller files helps users load websites faster.  Minified files also helps us with hosting and promotes good practices.  If you need to upload images, see if [extra compression](http://www.sitepoint.com/image-compression-tools/) can make your images smaller.  [SVG optimizers](https://github.com/svg/svgo#svgo----) may also help with SVG files from Inkscape and Illustrator.
-
-### Add `update.json` <a href="#updatejson-schema"></a>
+<a href="#updatejson-schema"></a>
+### Add `update.json`
 
 libgrabber looks for `update.json` at the root of each project folder.  This file tells libgrabber where to check for project updates and which files it should copy to jsDelivr.  You add `update.json` using these steps:
 
