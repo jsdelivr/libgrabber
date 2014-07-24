@@ -75,7 +75,7 @@ Following example excludes non-minified resources:
 }
 ```
 
-##### [Humane-js](https://github.com/wavded/humane-js) Example (github)
+##### [Humane-js](https://github.com/wavded/humane-js)  ([*/files/humane.js/update.json*](https://github.com/jsdelivr/jsdelivr/blob/master/files/humane.js/update.json)) (github)
 
 ```json
 {
