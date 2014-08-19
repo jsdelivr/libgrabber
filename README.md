@@ -96,7 +96,7 @@ Following example excludes non-minified resources:
   "name": "lodash",
   "repo": "lodash/lodash",
   "files": {
-    "basePath": "dist/",
+    "basePath": "dist/"
   }
 }
 ```
