@@ -40,7 +40,7 @@ libgrabber looks for `update.json` at the root of each project folder.  This fil
 
 `packageManager` (required) (github, [npm](http://npmjs.org/) or [bower](http://bower.io/)) - to declare which package manager libgrabber watches for new versions
 
-`name` (required) - refers to package name on npm or Bower, or repo name when GitHub is used
+`name` (required) - refers to the repo's name on [jsDelivr](http://www.jsdelivr.com/) is GitHub is used, otherwise package name on npm or Bower
 
 `repo` (optional when npm or bower is used) - GitHub repository (for example `jsdelivr/libgrabber`)
 
