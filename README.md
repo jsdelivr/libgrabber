@@ -103,7 +103,7 @@ Following example excludes non-minified resources:
 
 ### Create new package release
 
-When libgrabber detects a release with a new [SemVer](http://semver.org/) complaint tag, it will automatically update the repo on jsDelivr.  The `packageManager` value you chose in `update.json` determines where you need to update your actual package.
+When libgrabber detects a release with a new [SemVer](http://semver.org/) compliant tag, it will automatically update the repo on jsDelivr.  The `packageManager` value you chose in `update.json` determines where you need to update your actual package.
 
 #### GitHub Releases
 
