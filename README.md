@@ -46,14 +46,14 @@ libgrabber looks for `update.json` at the root of each project folder.  This fil
 
 `files/basePath` (optional) - base directory from which files are copied (for example `dist/`). Defaults to `/` (relative to the root directory of unpacked project package).
 
-`files/include` (optional) - specifies files and dirs that will be copied from project package. Accepts one or more glob strings. Defaults to `**/*`, meaning all files and directories. Useful examples:
+`files/include` (optional) - array that specifies files and dirs that will be copied from project package. Accepts one or more glob strings. Defaults to `**/*`, meaning all files and directories. Useful examples:
 
 - `main.min.js` - copies `main.min.js` file in the base dir
 - `*.js` - copies javascript files found in the base dir
 - `**/*.js` - copies javascript files found in the base directory and recursively in all its subdirectories. Directory structure will be retained.
 - `dist/*.js` - copies javascript files from dist dir. Directory structure will not be retained (e.g. `dist` dir will be stripped when copied). To retain directory structure prepend glob with `./` e.g. `./vendors/*.js` 
 
-`files/exclude` (optional) - specifies files and dirs that will be excluded.  Format is the same as `files/include`.
+`files/exclude` (optional) - array that specifies files and dirs that will be excluded.  Format is the same as `files/include`.
 
 Libgrabber glob functionality is based on [node-glob](https://github.com/isaacs/node-glob), for more information and examples, please see its [documentation](https://github.com/isaacs/node-glob).
 
@@ -97,6 +97,19 @@ Following example excludes non-minified resources:
   "repo": "lodash/lodash",
   "files": {
     "basePath": "dist/"
+  }
+}
+```
+
+##### [midnight.js](https://github.com/Aerolab/midnight.js) Example (single-item include array)
+
+```json
+{
+  "packageManager": "github",
+  "name": "jquery.midnight",
+  "repo": "Aerolab/midnight.js",
+  "files": {
+    "include": ["midnight.jquery.min.js"]
   }
 }
 ```
