@@ -4,7 +4,7 @@ libgrabber
 libgrabber is a bot that runs on jsDelivr's servers to auto-update projects.
 There are three simple steps to enable auto-updating:
 
-1. [Prepare minifed files](#prepare-minifed-files)
+1. [Prepare minified files](#prepare-minified-files)
 2. [Add or update `update.json` schema at jsDelivr](#add-updatejson-schema)
 3. [Create New Package Release](#create-new-package-release)
 
@@ -13,10 +13,9 @@ If you are a developer and want to contribute to our bot's code, we also include
 Usage
 -----
 
-### Prepare minifed files
-Not only will your users, but it helps us with hosting and promoting good practices 
+### Prepare minified files
 Please upload only minified files on jsDelivr.  Smaller files helps users load websites faster.  Minified files also helps us with hosting and promotes good practices.  If you need to upload images, see if [extra compression](http://www.sitepoint.com/image-compression-tools/) can make your images smaller.  [SVG optimizers](https://github.com/svg/svgo#svgo----) may also help with SVG files from Inkscape and Illustrator.
-<a href="#updatejson-schema"></a>
+
 ### Add `update.json` schema
 
 libgrabber looks for `update.json` at the root of each project folder.  This file tells libgrabber where to check for project updates and which files it should copy to jsDelivr.  You add `update.json` using these steps:
@@ -120,7 +119,7 @@ When libgrabber detects a release with a new [SemVer](http://semver.org/) compli
 
 #### GitHub Releases
 
-You can use the [GitHub web GUI](https://help.github.com/articles/creating-releases), or from CLI use [`git-tag`](http://git-scm.com/book/en/Git-Basics-Tagging) to post a new Release.
+You can use the [GitHub web GUI](https://help.github.com/articles/creating-releases), or from CLI use [`git-tag`](http://git-scm.com/book/en/Git-Basics-Tagging) to post a new release.
 
 #### npm
 
