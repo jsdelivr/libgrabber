@@ -40,3 +40,5 @@ out/
 .idea_modules/
 
 .cache/
+
+tests/
