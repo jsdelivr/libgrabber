@@ -165,5 +165,6 @@ $ git remote add upstream git@github.com:jsdelivr/jsdelivr.git
 ```bash
 # --jsdelivr-path <path to the cloned forked repo>
 # --config <path to the above mention config file>
-$ libgrabber --jsdelivr-path jsdelivr/ --config jsdelivr/libgrabber.config.json
+# --project <name of project to update, if absent libgrabber will default to updating all projects>
+$ libgrabber --jsdelivr-path jsdelivr/ --config jsdelivr/libgrabber.config.json --project projectName
 ```

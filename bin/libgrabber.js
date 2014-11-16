@@ -6,6 +6,7 @@ var grabber = require('../lib/libgrabber');
 
 var jsDelivrPath = config.get('jsdelivr-path');
 var projectsDir = config.get('jsdelivr-projects-dir');
+var project = config.get('project');
 var projectsPath = path.join(jsDelivrPath, projectsDir);
 
-grabber.updateAll(jsDelivrPath, projectsPath);
+grabber.updateAll(jsDelivrPath, projectsPath, project);
