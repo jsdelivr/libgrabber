@@ -33,7 +33,6 @@
     "decompress": "^0.2.5",
     "download": "^0.1.19",
     "event-stream": "~3.1.0",
-    "fs-extra": "^0.12.0",
     "gift": "~0.4.2",
     "github": "^0.2.2",
     "glob": "^3.2.11",
