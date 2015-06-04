@@ -46,7 +46,7 @@
     "npm-registry-client": "^1.0.1",
     "npmconf": "^1.1.9",
     "remove": "^0.1.5",
-    "semvish": "^0.3.0",
+    "semvish": "^1.0.0",
     "tar": "^1.0.0",
     "vinyl-fs": "^0.1.4",
     "winston": "^0.7.3",
