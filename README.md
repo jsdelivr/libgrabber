@@ -21,7 +21,7 @@ Please upload only minified files on jsDelivr.  Smaller files helps users load w
 libgrabber looks for `update.json` at the root of each project folder.  This file tells libgrabber where to check for project updates and which files it should copy to jsDelivr.  You add `update.json` using these steps:
 
 1. Fork the [jsDelivr/jsDelivr](https://github.com/jsdelivr/jsdelivr) repo
-2. Open your project folder.  If it doesn't exist, please add a new folder and `info.ini` file using [jsDelivr's file structure](https://github.com/jsdelivr/jsdelivr#file-structure).
+2. Open your project folder.  If it doesn't exist, please add a new folder and `info.ini` file using [jsDelivr's file structure](https://github.com/jsdelivr/jsdelivr/blob/master/CONTRIBUTING.md#file-structure).
 3. Write `update.json` using this format:
 
 ```json
