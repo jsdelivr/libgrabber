@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/jsdelivr/libgrabber",
   "dependencies": {
-    "async": "^0.7.0",
+    "async": "^1.5.0",
     "bower": "^1.2.8",
     "bower-registry-client": "^0.2.0",
     "chai": "^1.9.2",
