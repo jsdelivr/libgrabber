@@ -56,6 +56,11 @@ libgrabber looks for `update.json` at the root of each project folder.  This fil
 
 Libgrabber glob functionality is based on [node-glob](https://github.com/isaacs/node-glob), for more information and examples, please see its [documentation](https://github.com/isaacs/node-glob).
 
+#### Tools
+
+- [megawac/cdn-it](https://pypi.python.org/pypi/cdn-it) - python tool to fill in config files, with prompts to fill in data.  
+- [tomByrer/jsdelivr-config-files](https://www.npmjs.com/package/jsdelivr-config-files) - Simple node tool to grab `package.json` data, requriring hand editing and manual uploading. 
+
 #### Examples
 
 ##### [Bootstrap](https://github.com/twbs/bootstrap) Example (github)
