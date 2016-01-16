@@ -31,7 +31,7 @@
     "chai": "^1.9.2",
     "concat-stream": "~1.4.1",
     "decompress": "^0.2.5",
-    "download": "^0.1.19",
+    "download": "^4.4.3",
     "event-stream": "~3.1.0",
     "gift": "0.4.2",
     "github": "^0.2.2",
