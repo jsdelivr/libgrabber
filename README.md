@@ -14,7 +14,7 @@ Usage
 -----
 
 ### Prepare minified files
-Please upload only minified files on jsDelivr.  Smaller files helps users load websites faster.  Minified files also helps us with hosting and promotes good practices.  If you need to upload images, see if [extra compression](http://www.sitepoint.com/image-compression-tools/) can make your images smaller.  [SVG optimizers](https://github.com/svg/svgo#svgo----) may also help with SVG files from Inkscape and Illustrator.
+Please upload only minified files on jsDelivr.  Smaller files helps users load websites faster.  Minified files also helps us with hosting and promotes good practices.  Many automated tools are available to [minify](https://www.npmjs.com/search?q=minify), or you can [minify HTML, CSS, & JavaScript online](http://refresh-sf.com/).   If you need to upload images, see if [extra compression](http://www.sitepoint.com/image-compression-tools/) can make your images smaller.  [SVG optimizers](https://github.com/svg/svgo#svgo----) may also help with SVG files from Inkscape and Illustrator.
 
 ### Add `update.json` schema
 
